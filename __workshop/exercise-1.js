@@ -5,10 +5,47 @@ const complicatedArray = ['cucumber', 44, true];
 
 const makeAllCaps = (array) => {
   // write some code
+
+	myPromise = new Promise((resolve, reject) => {
+
+		const isString = (element) => typeof(element) === "string";	
+
+	
+
+		if (array.every(isString) === true){
+			let newarr = [];
+			array.forEach((word)=>{
+				newarr.push(word.toUpperCase());
+			})
+
+			resolve(newarr);
+		}
+		else{
+			reject('did not receive an array with strings');
+		}
+
+	});
+
+
+
+
 };
 
 const sortWords = (array) => {
   // write some code
+
+	myPromise = new Promise((resolve, reject) => {
+
+		const isString = (element) => typeof(element) === "string";	
+
+		if (array.every(isString) === true){
+			resolve(array.sort());
+		}
+		else{
+			reject('did not receive an array with strings');
+		}
+
+	});
 };
 
 // Calling (testing)
