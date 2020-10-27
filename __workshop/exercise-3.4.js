@@ -11,7 +11,6 @@ const getDistanceFromIss = (address) => {
 
 
  return Promise.all([AfromP, posIss]).then((positions) => {
-
   return getDistance(positions[0], positions[1]);
 });
 

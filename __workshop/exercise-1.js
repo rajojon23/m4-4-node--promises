@@ -6,7 +6,7 @@ const complicatedArray = ['cucumber', 44, true];
 const makeAllCaps = (array) => {
   // write some code
 
-	myPromise = new Promise((resolve, reject) => {
+	let myPromise = new Promise((resolve, reject) => {
 
 		const isString = (element) => typeof(element) === "string";	
 
@@ -26,6 +26,8 @@ const makeAllCaps = (array) => {
 
 	});
 
+	return myPromise;
+
 
 
 
@@ -34,7 +36,7 @@ const makeAllCaps = (array) => {
 const sortWords = (array) => {
   // write some code
 
-	myPromise = new Promise((resolve, reject) => {
+	let myPromise = new Promise((resolve, reject) => {
 
 		const isString = (element) => typeof(element) === "string";	
 
@@ -46,6 +48,9 @@ const sortWords = (array) => {
 		}
 
 	});
+
+
+	return myPromise;
 };
 
 // Calling (testing)
